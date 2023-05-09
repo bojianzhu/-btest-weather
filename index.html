@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	<!-- 获取地理位置 -->
+	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&key=6abe723db7fa202d592cae15f5c581f1&plugin=AMap.Adaptor"></script>
+	<script type="text/javascript">
+	 
+	    window.init = function(){
+	        var map = new AMap.Map('container', {
+	           center:[117.000923,36.675807],
+	           zoom:11
+	        });
+	    }
+	 
+	</script>
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
